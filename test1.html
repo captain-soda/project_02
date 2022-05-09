@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>响应式布局</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .container{
+              width: 750px;
+              margin: 0 auto;
+            }
+            .container ul{
+               list-style: none; 
+            }
+            .container ul li{
+                float: left;
+                width: 93.75px;
+                height: 30px;
+                background-color: green;
+            }
+            @media screen and (max-width:767px){
+                .container{
+                    width: 100%;
+                }
+                .container ul li{
+                    width: 33.33%;
+                }
+
+            }
+
+            @media  screen and (max-width:767px) {
+                .container{
+                    width: 100%;
+                }
+            }
+            @media  screen and (min-width:768px) {
+                .container{
+                    width: 750px;
+                }
+            }
+            @media  screen and (min-width:992px) {
+                .container{
+                    width: 970px;
+                }
+            }
+            @media  screen and (min-width:1200px) {
+                .container{
+                    width: 1170px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+           <button type="button" class="btn btn-danger">Danger</button>
+           <span class="glyphicon glyphicon-search"></span>
+        </div>
+    </body>
+</html>
